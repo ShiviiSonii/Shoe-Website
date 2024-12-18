@@ -366,12 +366,16 @@ img {
 }
 
 .testimonial {
-  margin: 40px 15px;
+  max-width: 1120px;
+  margin: 40px auto;
   background-color: #f9f9f9;
-  padding: 80px 20px;
+  padding: 40px 20px;
   text-align: center;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
 }
 
 .testimonial__quote {
