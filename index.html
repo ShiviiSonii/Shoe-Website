@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <title>Nike Clone</title>
+</head>
+
+<body>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="" class="nav__logo">
+        <img src="assets/img/logo.svg" alt="">
+      </a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Men</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Women</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Kids</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Sale</a>
+          </li>
+        </ul>
+
+        <div class="nav__close" id="nav-close">
+          <i class="ri-close-line"></i>
+        </div>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="ri-apps-2-fill"></i>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="home">
+      <div class="home__container container">
+        <div class="home__data">
+          <h2 class="home__subtitle">NIKE</h2>
+          <h1 class="home__title">LUPINEK
+            <br>
+            FLYKNIT
+            <br>
+            ACG
+          </h1>
+          <p class="home__description">
+            Designed to withstand the rigors of adverse
+            conditions, the Nike ACC Flyknit Lupinek combines
+            flyknit, Flywire and a water-resistant Defender
+            Repellent system in the upper.
+          </p>
+          <a href="#" class="home__button">SHOP NOW</a>
+        </div>
+
+        <div class="home__images">
+          <div class="home__circle"></div>
+
+          <div class="home__swiper swiper">
+            <div class="swiper-wrapper">
+              <article class="home__article swiper-slide">
+                <img src="./assets/img/shoe-2.png" alt="" class="home__shoe">
+              </article>
+              <article class="home__article swiper-slide">
+                <img src="./assets/img/shoe-1.png" alt="" class="home__shoe">
+              </article>
+              <article class="home__article swiper-slide">
+                <img src="./assets/img/shoe-3.png" alt="" class="home__shoe">
+              </article>
+            </div>
+
+            <div class="swiper-pagination"></div>
+          </div>
+
+        </div>
+
+        <div class="home__social">
+          <a href="" class="home__social-link">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a href="" class="home__social-link">
+            <i class="ri-instagram-fill"></i>
+          </a>
+          <a href="" class="home__social-link">
+            <i class="ri-youtube-fill"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+    <section class="testimonial">
+      <div class="testimonial__container container">
+        <div class="testimonial__swiper swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <blockquote class="testimonial__quote">
+                "This shoes is a game-changer—unmatched comfort and durability!"
+              </blockquote>
+              <p class="testimonial__author">- John Doe, Sports Enthusiast</p>
+            </div>
+            <div class="swiper-slide">
+              <blockquote class="testimonial__quote">
+                "The most comfortable shoes I've ever worn. Perfect for all conditions!"
+              </blockquote>
+              <p class="testimonial__author">- Jane Smith, Fitness Expert</p>
+            </div>
+            <div class="swiper-slide">
+              <blockquote class="testimonial__quote">
+                "Amazing durability and support, a must-have for any sports enthusiast!"
+              </blockquote>
+              <p class="testimonial__author">- Michael Johnson, Professional Athlete</p>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="shop">
+      <div class="shop__container container">
+        <h2 class="shop__title">Shop Our Collection</h2>
+        <div class="shop__products" id="shopProducts">
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Modal -->
+    <div class="modal" id="productModal">
+      <div class="modal__content">
+        <span class="modal__close" onclick="closeModal()">&times;</span>
+        <h2 class="modal__title" id="modalProductTitle"></h2>
+        <img src="" alt="Product Image" id="modalProductImg" class="modal__image">
+        <p id="modalProductPrice" class="modal__price"></p>
+
+        <div class="modal__colors">
+          <p>Select Color:</p>
+          <button class="color__option" style="background-color: rgb(200, 145, 34);"
+            onclick="selectColor('Brown')"></button>
+          <button class="color__option" style="background-color: grey;" onclick="selectColor('Grey')"></button>
+          <button class="color__option" style="background-color: black;" onclick="selectColor('Black')"></button>
+        </div>
+
+        <button class="modal__add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+
+    <footer class="footer">
+      <p class="footer__text">&copy; 2024 Nike Clone. All rights reserved.</p>
+    </footer>
+  </main>
+
+  <script src="assets/js/swiper-bundle.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

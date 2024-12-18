@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Nike Air Max Infinity",
+    "price": "$199.99",
+    "image": "shoe-1.png"
+  },
+  {
+    "id": 2,
+    "name": "Targeted Support",
+    "price": "$159.99",
+    "image": "shoe-2.png"
+  },
+  {
+    "id": 3,
+    "name": "Breathable Upper",
+    "price": "$199.99",
+    "image": "shoe-3.png"
+  },
+  {
+    "id": 4,
+    "name": "Air Max Unit",
+    "price": "$199.99",
+    "image": "shoe-3.png"
+  },
+  {
+    "id": 5,
+    "name": "Flyknit Upper",
+    "price": "$199.99",
+    "image": "shoe-1.png"
+  },
+  {
+    "id": 6,
+    "name": "Nike Zoom Pegasus",
+    "price": "$199.99",
+    "image": "shoe-2.png"
+  }
+]
